@@ -1,8 +1,8 @@
 /*
 Name: Sean Fox
-Date: 5-19-19
+Date: 5-26-19
 Class: CIT-130
-Purpose: Assignment 2, Part 2 - Write a Counter class
+Purpose: Assignment 3, Part 2 - Write a Fraction ADT
 */
 
 public class Fraction {

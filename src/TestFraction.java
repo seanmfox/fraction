@@ -1,3 +1,10 @@
+/*
+Name: Sean Fox
+Date: 5-26-19
+Class: CIT-130
+Purpose: Assignment 3, Part 2 - Write a test program for the Fraction ADT
+*/
+
 import java.util.Scanner;
 
 public class TestFraction {
