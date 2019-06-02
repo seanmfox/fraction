@@ -1,8 +1,8 @@
 /*
 Name: Sean Fox
-Date: 5-26-19
+Date: 6-2-19
 Class: CIT-130
-Purpose: Assignment 3, Part 2 - Write a Fraction ADT
+Purpose: Assignment 5, Part 1 - Create DenominatorIsZeroException class
 */
 
 public class Fraction {
@@ -10,12 +10,12 @@ public class Fraction {
     private int num;
     private int den;
 
-    public Fraction() {
+    public Fraction() throws DenominatorIsZeroException{
         setNum(1);
         setDenom(2);
     }
 
-    public Fraction(int a, int b) {
+    public Fraction(int a, int b) throws DenominatorIsZeroException {
         setNum(a);
         setDenom(b);
     }
@@ -24,7 +24,9 @@ public class Fraction {
         num = newNum;
     }
 
-    private void setDenom(int newDen) {
+    private void setDenom(int newDen) throws DenominatorIsZeroException {
+        if (newDen == 0)
+            throw new DenominatorIsZeroException();
         den = newDen;
     }
 
@@ -41,6 +43,6 @@ public class Fraction {
     }
 
     public boolean equals(Fraction f) {
-        return getNum()*f.getDenom() == f.getNum()*getDenom();
+        return getNum() * f.getDenom() == f.getNum() * getDenom();
     }
 }
